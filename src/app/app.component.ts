@@ -10,5 +10,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Angular docker version 20';
+  title = 'Angular docker version 20 EC2 Devlopment added';
 }
