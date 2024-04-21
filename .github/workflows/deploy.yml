@@ -28,15 +28,3 @@ jobs:
 
     - name: Verify Pushed Image
       run: docker pull sharmaaashi/docker:latest
-
-    - name: Deploy to EC2
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_KEY }}
-        script: |
-          sudo docker pull sharmaaashi/docker:latest
-          sudo docker stop docker || true
-          sudo docker rm docker || true
-          sudo docker run -d --name docker -p 4200:4200 sharmaaashi/docker:latest
