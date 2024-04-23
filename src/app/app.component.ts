@@ -10,5 +10,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Auto deployed using CI/CD pipeline';
+  title = 'Auto deployed using CI/CD pipeline final test';
 }
